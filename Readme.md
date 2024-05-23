@@ -20,7 +20,7 @@ pip install -r requirements.txt
 * Now simply run the file by
 
 ```bash
-python privateai.py
+python privateai3.py
 ```
 
 * Now you can enter and ask any questions from your data.
