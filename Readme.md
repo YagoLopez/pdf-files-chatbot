@@ -30,7 +30,12 @@ python privateai.py
 * The response will contain the chat prompt in first place
 * Search in the console for the "answer". That would be the real answer
 * The response will contain metadata about the answer quality, embeddings used, etc.
-* This is a sample of response:
+* This is a sample of question:
+```
+How is the weather in Asturias?
+```
+
+* And this is a sample of response:
 
 ```
 You are a Q&A expert system. Your responses must always be rooted in the context provided for each query. Here are some guidelines to follow:
