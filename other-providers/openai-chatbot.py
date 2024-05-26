@@ -1,7 +1,7 @@
 import os
 from embedchain import App
 
-os.environ['OPENAI_API_KEY'] = 'sk-proj-oNJtvAVCZPZ8VC6HTsGIT3BlbkFJMV1avpdDUOlu1Yvpoafh'
+os.environ['OPENAI_API_KEY'] = 'sk-proj-egxUBV4FAydXpckC6IrKT3BlbkFJcMgpjAeaopMOFSXHn4O7'
 
 
 # embedder:

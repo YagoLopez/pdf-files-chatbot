@@ -1,15 +1,37 @@
+import os
 from embedchain import App
+import json
 
-app = App.from_config("config.yaml")
-app.add("./docs/", data_type="directory")
+os.environ["HUGGINGFACE_ACCESS_TOKEN"] = "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"
+
+config = {
+    'llm': {
+        'provider': 'huggingface',
+        'config': {
+            'model': 'mistralai/Mistral-7B-Instruct-v0.2',
+            'top_p': 0.5,
+            'stream': True,
+        },
+    },
+    'embedder': {
+        'provider': 'huggingface',
+        'config': {
+            'model': 'sentence-transformers/all-mpnet-base-v2'
+        }
+    }
+}
+
+app = App.from_config(config=config)
+app.add("./docs/datasource.pdf", data_type="pdf_file")
 
 while True:
-    user_input = input("Ask a question (type 'exit' to quit): ")
+    user_input = input("Ask a question about Asturias (type 'exit' to quit): ")
 
-    # Break the loop if the user types 'exit'
     if user_input.lower() == "exit":
         break
 
-    # Process the input and provide a response
-    response = app.query(user_input)
+    (response, sources) = app.query(user_input, citations=True)
+    print("========================================")
     print(response)
+    print("========================================")
+    print(json.dumps(sources, indent=4, sort_keys=False))
