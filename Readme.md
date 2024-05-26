@@ -2,9 +2,9 @@
 
 This is a proof of concept
 
-In this example, we will create a private AI using embedchain.
+In this example, we will create a private AI using the Embedchain framework.
 
-Private AI is useful when you want to chat with your data and you dont want to spend money and your 
+Private AI is useful when you want to chat with your data and documents, and you dont want to spend money and your 
 data should stay on your machine. In this example a PDF file will be used.
 
 ## How to install
@@ -32,7 +32,7 @@ python privateai.py
 * The response will contain metadata about the answer quality, embeddings used, etc.
 * This is a sample of response:
 
-```json
+```
 You are a Q&A expert system. Your responses must always be rooted in the context provided for each query. Here are some guidelines to follow:
 
 1. Refrain from explicitly mentioning the context provided in your response.
@@ -48,6 +48,9 @@ Query: how is the weather in Asturias?
 Answer:
 Asturias experiences a maritime climate influenced by the Gulf Stream. The region has significant precipitation throughout the year, with mild summers and relatively benign winters along the coast. Snow is common in the mountainous interior, typically lasting from October to May.
 ========================================
+```
+
+```json
 [
     [
         "rain and snow are regular weather features of Asturian winters. In coastal or near-coastal areas, daytime high temperatures generally average around 12 \u00b0C (54 \u00b0F) \u2013 13 \u00b0C (55 \u00b0F) during winter and 22 \u00b0C (72 \u00b0F) \u2013 23 \u00b0C (73 \u00b0F) in summer.[12]Municipalities of Asturias Parishes Geography and climate",
