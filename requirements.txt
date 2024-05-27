@@ -1,1 +1,2 @@
-embedchain[opensource]
+embedchain[opensource]~=0.1.104
+termcolor
