@@ -8,7 +8,7 @@
 data should stay on your machine. In this example a PDF file will be used.
 
 ## Demo
-https://colab.research.google.com/github/YagoLopez/pdf-files-chatbot/blob/master/privateai.ipynb
+https://colab.research.google.com/drive/1J8Bf3vlP6M65kLUp0WNnHD96fRc23AiH?usp=sharing#scrollTo=bcadb9e9967f9ec8
 
 ## How to install
 
