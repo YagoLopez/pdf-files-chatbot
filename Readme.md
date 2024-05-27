@@ -1,10 +1,10 @@
-# Private AI
+# PDF Chat bot 
 
-This is a proof of concept
+* This is a proof of concept
 
-In this example, we will create a private AI using the Embedchain framework.
+* In this example, we will create a private AI using the Embedchain framework.
 
-Private AI is useful when you want to chat with your data and documents, and you dont want to spend money and your 
+* Private AI is useful when you want to chat with your data and documents, and you dont want to spend money and your 
 data should stay on your machine. In this example a PDF file will be used.
 
 ## How to install
@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## How to use
 
-* Now open privateai.py file and change the line `app.add` to point to your directory or data source.
+* Open privateai.py file and change the line `app.add` to point to your pdf file.
 * If you want to add any other data type, you can browse the supported data types [here](https://docs.embedchain.ai/components/data-sources/overview)
 
 * Now simply run the file by
@@ -26,16 +26,17 @@ pip install -r requirements.txt
 python privateai.py
 ```
 
-* Now you can enter and ask any questions from your data.
-* The response will contain the chat prompt in first place
+* Ask any questions from your data at the command line
+* The response will contain the chat context (prompt) in first place
 * Search in the console for the "answer". That would be the real answer
 * The response will contain metadata about the answer quality, embeddings used, etc.
-* This is a sample of question:
+
+## This is a sample of question:
 ```
 How is the weather in Asturias?
 ```
 
-* And this is a sample of response:
+## And this is a sample of response:
 
 ```
 You are a Q&A expert system. Your responses must always be rooted in the context provided for each query. Here are some guidelines to follow:

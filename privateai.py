@@ -25,7 +25,7 @@ app = App.from_config(config=config)
 app.add("./docs/datasource.pdf", data_type="pdf_file")
 
 while True:
-    user_input = input("Ask a question about Asturias (type 'exit' to quit): ")
+    user_input = input("Ask a question about Asturias (For example: 'Where is Asturias'). Ttype 'exit' to quit: ")
 
     if user_input.lower() == "exit":
         break
