@@ -7,6 +7,9 @@
 * Private AI is useful when you want to chat with your data and documents, and you dont want to spend money and your 
 data should stay on your machine. In this example a PDF file will be used.
 
+## Demo
+https://colab.research.google.com/github/YagoLopez/pdf-files-chatbot/blob/master/privateai.ipynb
+
 ## How to install
 
 First create a virtual environment and install the requirements by running
