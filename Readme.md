@@ -8,7 +8,7 @@
 data should stay on your machine. In this example a PDF file will be used.
 
 ## Demo
-https://colab.research.google.com/drive/1J8Bf3vlP6M65kLUp0WNnHD96fRc23AiH?usp=sharing#scrollTo=bcadb9e9967f9ec8
+https://idx.google.com/pdf-files-chatbot-5345995
 
 ## How to install
 
